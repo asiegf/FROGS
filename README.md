@@ -230,12 +230,12 @@ Please take time to read individual README.txt and LICENCE.txt files.
 ## Abnormal increase memory consumption with CPU number
 With some old versions of glibc the virtual memory used by CPU is multiplicative.
 
-| Nb CPUs | expected RAM consumtion | observed RAM consumption |
-| :-----: | :---------------------: | :----------------------: |
-|    1    |          1 Gb           |           1Gb            |
-|    2    |          2 Gb           |          2*2 Gb          |
-|    3    |          3 Gb           |          3*3 Gb          |
-|    4    |          4 Gb           |          4*4 Gb          |
+| Nb CPUs | expected RAM consumption | observed RAM consumption |
+| :-----: | :----------------------: | :----------------------: |
+|    1    |           1 Gb           |           1Gb            |
+|    2    |           2 Gb           |          2*2 Gb          |
+|    3    |           3 Gb           |          3*3 Gb          |
+|    4    |           4 Gb           |          4*4 Gb          |
 
 
 The parameters memory and CPU provided in examples take into account this problem.
